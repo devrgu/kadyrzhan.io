@@ -2,9 +2,8 @@
 <div class="konsultatsia">
     <div class="konsultatsia-content">
        <div class="konsultatsia-wrap content">
-        <div class="konsultatsia-title title">
-            <h3>Обратитесь ко мне!</h3>   
-            <h2>Возникли вопросы? Получите<br>бесплатную консультацию!</h2>
+        <div class="konsultatsia-title title">   
+            <h3>Моя авторская программа "Imants Mind Therapy for Love" уже помогла многим женщинам, чья жизнь зашла в тупик. Они снова полюбили, стали мудрее, сумели пережить обиды и избавились от всего, что завело их в ловушку холодности, непонимания и проблемам со здоровьем.</h3>
         </div>
         <div class="main-button-continue-2 main-button">
            <a>КОНСУЛЬТАЦИЯ</a>
@@ -75,8 +74,9 @@ export default {
     .konsultatsia-wrap{
         text-align: center;
         padding-top: 90px;
+        padding-bottom: 120px;
         position: relative;
-        height: 500px;
+        min-height: 500px;
         
     }
     div.konsultatsia-title h2{
@@ -86,8 +86,9 @@ export default {
     }
     div.konsultatsia-title h3{
         color: #FFFFFF;
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 40px
     }
     div .main-button-continue-2{
         background-color: #FFFFFF;
@@ -148,15 +149,23 @@ export default {
         font-size: 16px;
         color: #616161;
     }
+    @media (max-width: 767px) {
+        div.konsultatsia-title h3{
+            font-size: calc(17px + (19 + 19 * 0.7) * ((100vw - 320px) / 1280));
+            margin: 0 2px;
+        }
+        div .main-button-continue-2{
+            margin-top: 40px;
+        }
+    }
+    @media (max-width: 360px) {
+        .recvisit-box-title h3{
+            font-size: 16px
+        }
+    }
     @media (max-width: 440px){
         .recvisit{
             width: 100%;
-        }
-        div.konsultatsia-title h3{
-            font-size: 4.5vw;
-        }
-        div.konsultatsia-title h2{
-            font-size: 6vw !important 
         }
     }
 </style>

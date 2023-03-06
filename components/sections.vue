@@ -20,7 +20,7 @@
                    <div class="avtor">
                        <div class="avtor-img"></div>
                        <div class="avtor-text">
-                           <p>Серик Аубакиров Айыпович
+                           <p>Кадыржан Жусупов
                                <span><br>Ваш путеводитель по жизни.<br></span></p>
                        </div>
                    </div>
@@ -69,7 +69,7 @@
     .avtor-img{
         min-width: 100px;
         min-height: 100px;
-        background-image: url(/Serik.jpg);
+        background-image: url(/kadyrzhan.jpg);
         background-size: cover;
         border-radius: 100px;
     }
@@ -79,7 +79,7 @@
     }
     .avtor-text p{
         font-size: 16px;
-        color: #A7A7A7;
+        color: #666;
         font-weight: 400;
     }
      .backgr-biog{
@@ -106,7 +106,14 @@
     }
     @media (max-width: 565px){
         .avtor{
-            margin: 14px 0 0 30px
+            margin: 14px 0 0 20px
+        }
+        .avtor-img{
+            min-width: 90px !important;
+            min-height: 90px !important;
+        }
+        .hapiness-img{
+            margin: 20px;
         }
     }
 </style>

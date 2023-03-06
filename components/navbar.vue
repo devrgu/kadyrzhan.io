@@ -1,29 +1,33 @@
 <template>
-  <header class="content">
+  <header>
+    <div class="nav-wrap" :class="{'navbar--scrolled': scrolled}">
     <nav class="content">
-     <div class="hamburger-menu" @click="isActive = !isActive">
-       <div class="bar" :class="{animate: isActive}">
-     </div>
+      <div class="hamburger-menu" @click="isActive = !isActive">
+      <div class="bar-wrap">
+       <div class="bar" :class="{animate: isActive}"></div>
+       </div>
     </div>
       <ul>
        <div class="nav-list" v-show="isActive">
        <div class="nav-list-content">
         <li><nuxt-link to="/" exact>ГЛАВНОЕ</nuxt-link></li>
-          <li><a href="tel:+87771235176">+8 (777) 123 51 76</a></li>
+          <li><a href="tel:+87771235176">+7 (776) 979 30 15</a></li>
         </div>
        </div>
              <div class="button" @click="dialogTrue"><p>ЗАПИСАТЬСЯ</p></div>
       </ul>
     </nav>
+    </div>
     <v-app>
       <v-dialog v-model="name" width="600">
         <v-card height="800">
           <div class="window">
+            <img class="close-button" src="/close.svg" @click="Close">
             <div class="window-content">
                <div class="window-title">
                        <p>Оставьте заявку для<br>
                            <span>Обратной связи</span></p>
-                   </div>
+                </div>
                    <div class="window-forms">
                 <keep-alive>
                 <zapisatsa @someEvent="Close"/>
@@ -42,11 +46,11 @@
                        <p>Вы успешно оставили заявку<br>
                            <span>Ожидайте ответа</span></p>
                 </div>
-                 <div class="description">
+                 <div class="description-model">
                     <p>Вы готовы изменить свою жизнь, раз и навсегда? Приготовьтесь!</p>
                 </div>
                 <div class="main-buttons">
-                <div class="zapisatsa" @click="success = false">
+                <div class="zapisatsa-button" @click="success = false">
                 <nuxt-link to="/success">ОТЛИЧНО</nuxt-link>
                 </div>
                 </div>
@@ -66,6 +70,7 @@ export default {
         data:'',
         success: false,
         isActive: undefined,
+        scrolled: false
     }
   },
     components: {
@@ -84,12 +89,18 @@ export default {
              this.$store.commit('dialog/dialogMutation', newValue);
             console.log('newValue')
            } 
+        },
+        nav: {
         }
   },
     mounted() {
     this.handleView();
-    window.addEventListener("resize", this.handleView);
+    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("resize", this.handleView)
     console.log(this.dialogx)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
   },
     methods:{
          handleView() {
@@ -97,13 +108,18 @@ export default {
         ? (this.isActive = false)
         : (this.isActive = true);
     },
+    handleScroll() {
+      this.scrolled = window.scrollY > 0;
+    },
     dialogTrue(){
         this.$store.commit('dialog/dialogMutation', true);
        
     },
-    Close () {
+    Close (child) {
       this.$store.commit('dialog/dialogMutation', false);
-      this.success = true;    
+      if(child == true){
+        this.success = true
+      }
     },
     Changekonsultatsia () {
       this.component = 'zapisatsa'
@@ -129,16 +145,25 @@ export default {
       cursor: pointer;
       width: 100%;
     }
+    .navbar--scrolled {
+        background-color: #6666;
+        transition-duration: 0.5s;
+    }
+    .nav-wrap{
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 999;
+      transition-duration: 0.5s;
+    }
     nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height:80px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 999;
+      height:80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
     nav ul {
         display: flex;
@@ -191,9 +216,13 @@ export default {
 }
      .v-application--wrap {
       min-height: unset !important;
+      z-index: 1000;
     }
     .v-dialog__content--active{
         overflow: hidden;
+    }
+    .theme--dark.v-card {
+        background-color: #FFFFFF !important;
     }
     .v-card{
         overflow: hidden;
@@ -204,6 +233,15 @@ export default {
         display: flex;
         justify-content: center;
     }
+    .close-button{
+      width: 18px;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+    .window-content{
+        overflow: hidden;
+    }
     .window-title{
         font-size: 32px;
         font-weight: 600;
@@ -211,25 +249,40 @@ export default {
         margin-bottom: 56px;
     }
     .window-title span{
-        color: #326BFF
+        color: #41cb52
+    }
+    .window-title p{
+        color: #1D1919;
     }
     @media (max-width: 768px) {
         .button{
+            margin-right: 6vw;
             margin-left: 0;
+        }
+        .hamburger-menu{
+          margin-left: 32px;
+
+        }
+        nav{
+          justify-content:space-between;
         }
     @media (max-width: 560px) {
         .window-title{
-        font-size: 28px;
+        font-size: 6vw;
         font-weight: 600;
         text-align: center;
         margin-bottom: 48px;
     }
         }
+        @media (min-width: 767px){
+ h1 {
+  font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+ }
+}
         
         .hamburger-menu {
         display: block;
-        margin: 0 0 0 24px;
-        width: 50px;
+        padding-right: 40px;
         height: 54px;
         cursor: pointer;
 }
@@ -262,22 +315,17 @@ export default {
           cursor: pointer;
         }
         @media (max-width: 370px) {
-            .window-title{
-                font-size: 25px;
-            }
             .window{
                 margin: 48px 0;
             }
         }
         @media (max-width: 330px) {
-            .window-title{
-                font-size: 22px;
-            }
+            
         }
 .bar,
 .bar:after,
 .bar:before {
-  width: 45px;
+  width: 40px;
   height: 4.5px;
 }
 
@@ -295,7 +343,7 @@ export default {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 13px;
   background: white;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -304,7 +352,7 @@ export default {
   content: "";
   position: absolute;
   left: 0;
-  top: 15px;
+  top: 13px;
   background: white;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }

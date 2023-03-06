@@ -1,0 +1,78 @@
+<template>
+    <div class="goal">
+        <div class="goal-content content">
+            <div class="goal-title title">
+                <h2>Я сделаю все, чтобы вернуть вам гармоничные отношения, 
+                    здоровье и деньги!
+                </h2>
+                <h3>Но это не значит, что вы можете просто расслабиться
+                     и получать удовольствие. Результат в равной степени зависит и от 
+                     меня, и от Вас. Вы должны действительно хотеть кардинально
+                      изменить свою 
+                     жизнь и четко следовать моим рекомендациям. Но сначала:
+                </h3>        
+            </div>        
+            <div class="main-button-continue-2 main-button goal-button">
+                <a>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
+            </div>
+        </div>       
+    </div>
+</template>
+<style>
+.goal{
+    background-image: url(/happy_family.jpg);
+    background-position: center;
+    height: 650px;
+    width: 100%;
+    z-index: -10;
+    text-align: center;
+}
+.goal-content{
+    padding-top: 100px;
+}
+.goal-title{
+    display: inline-block;
+    text-align: center;
+    padding: 0 6px;
+}
+.goal-title h2{
+    color: #fff;
+}
+.goal-title h3{
+    margin: 40px 0;
+    font-weight: 400;
+    font-size: 20px !important;
+}
+.goal-button{
+    max-width: 400px;
+    width: auto;
+    border-radius: 100px !important;
+    background-color: #41cb52 !important;
+    color: #fff !important;
+    padding: 20px;
+    line-height: normal !important;
+}
+@media (max-width: 331px){
+    .goal-button a{
+        font-size: 16px;
+    }
+}  
+@media (max-width: 410px){
+    .goal-title h3{
+        font-size: 18px !important;
+    }
+    .goal-content{
+        padding-top: 80px;
+    }
+}
+@media (max-width: 360px){
+    div .main-button-continue-2{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 767px){
+    .goal-title h2{
+        font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+    }
+}
+</style>

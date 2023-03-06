@@ -1,12 +1,13 @@
 <template>
 <div class="main-page">
   <mainw></mainw>
-  <description></description>
-  <therapy></therapy>
+  <problem></problem>
   <helpingyou></helpingyou>
+  <problem-2></problem-2>
   <konsultatsia></konsultatsia>
   <sections></sections>
   <whyme></whyme>
+  <mygoal></mygoal>
   <conque></conque>
 </div>
 </template>
@@ -81,5 +82,16 @@ img {
 
     .body{
         margin: 120px 0 0;
-    } 
+    }
+  .line{
+    text-align: center;
+  }
+  .line hr{
+    width: 30%;
+    background-color: #41cb52;
+    height: 5px;
+    border: none;
+    display: inline-block;
+    border-radius: 100%;
+  }
 </style>
