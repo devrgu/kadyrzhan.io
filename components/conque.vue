@@ -3,82 +3,84 @@
         <div class="conque-content content">
           <div class="conque-title sections-title title subtitle">
            <h2>Почему вы должны мне<br>доверять?</h2>
-           <p>Я знаю всю эту боль изнутри. Я знаю, как пройти через это. Я понимаю и чувствую вас в деталях. Я на собственном опыте убедился, что гипнотерапия - инструмент позволяющий, вытащить человека с нищеты, обрести прочную любовь, вылечить его от любых болезней и получить крепкое здоровье. Обратитесь ко мне на консультацию.</p>
+           <p>Я знаю всю эту боль изнутри. Я знаю, как пройти через это. 
+            Я понимаю и чувствую вас в деталях. Я на собственном опыте убедился, 
+            что гипнотерапия - инструмент позволяющий, вытащить человека с нищеты, обрести
+             прочную любовь, вылечить его от любых болезней и получить крепкое здоровье. 
+             Обратитесь ко мне на консультацию.</p>
        </div>
            <div class="conque-wrap">
             <div class="conque-card-1 conque-card">
                 <div class="conque-card-1-icon conque-card-icon">
-                   <iconpobeditel  width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+                    <img src="/galochka.svg"/>
                 </div>
                 <div class="conque-card-1-text conque-card-text">
                     <div class="conque-card-1-title conque-card-title">
-                        <h3>Будете здоровы и любимы</h3>
+                        <h3>Я тоже испытывал сложности с близким человеком</h3>
                     </div>
                     <div class="conque-card-1-information conque-card-information information">
-                        <p>Я знаю всю эту боль на своем опыте. Я знаю, как пройти через это. Я полностью понимаю и чувствую вас. Я на собственном опыте убедился, что гипнотерапия может снова разжечь огонь любви и оставить холодность и непонимание в прошлом.</p>
+                        <p>Я знаю всю эту боль на своем опыте. Я знаю, как пройти через это. 
+                            Я полностью понимаю и чувствую вас. Я на собственном опыте 
+                            убедился, что гипнотерапия может снова разжечь огонь любви и 
+                            оставить холодность и непонимание в прошлом.</p>
                     </div>
                 </div>
             </div>
             <div class="conque-card-1 conque-card">
                 <div class="conque-card-1-icon conque-card-icon">
-                    <iconpobeditel  width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+                    <img src="/galochka.svg"/>
                 </div>
                 <div class="conque-card-1-text conque-card-text">
                     <div class="conque-card-1-title conque-card-title">
-                        <h3>Возврат обретения
-новой жизни
-
-</h3>
+                        <h3>Я учился у лучших специалистов в этой области</h3>
                     </div>
                     <div class="conque-card-1-information conque-card-information information">
-                        <p>У вас снова загорится желание жить, вы будете полны амбиций.</p>
+                        <p>Я сертифицированный специалист American Academy Holistic Mind Therapy, основанной Павлом Дмитриевым — главным русскоязычным экспертом по гипнотерапии, учеником Джеральда Кейна и Ричарда Бендлера.</p>
                     </div>
                 </div>
             </div>
             <div class="conque-card-1 conque-card">
                 <div class="conque-card-1-icon conque-card-icon">
-                    <iconpobeditel  width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+                    <img src="/galochka.svg"/>
                 </div>
                 <div class="conque-card-1-text conque-card-text">
                     <div class="conque-card-1-title conque-card-title">
-                        <h3>Исчезнет тревога, вы обретете покой души</h3>
+                        <h3>Я уже помог многим людям</h3>
                     </div>
                     <div class="conque-card-1-information conque-card-information information">
-                        <p>Вы забудете о конфликтах, язвительных замечаниях и взаимной раздраженности</p>
+                        <p>Просто посмотрите их отзывы и загляните в их лица. Это лица людей, которые уже были готовы сдаться, но благодаря мне обрели простое человеческое счастье.</p>
                     </div>
                 </div>
             </div>
             <div class="conque-card-1 conque-card">
                 <div class="conque-card-1-icon conque-card-icon">
-                    <iconpobeditel  width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+                    <img src="/galochka.svg"/>
                 </div>
                 <div class="conque-card-1-text conque-card-text">
                     <div class="conque-card-1-title conque-card-title">
-                        <h3>Все пойдет по
-плану процветания</h3>
+                        <h3>Я готов помочь вам на каждом этапе</h3>
                     </div>
                     <div class="conque-card-1-information conque-card-information information">
-                        <p>Вы почувствуете, что все в жизни складывается именно так, как вы всегда мечтали.</p>
+                        <p>Вы можете рассчитывать на мою поддержку и понимание. Но специалист — это не просто уши. Я дам вам четкую инструкцию, как исправить то, что уже давно не работает.</p>
                     </div>
                 </div>
             </div>
             <div class="conque-card-1 conque-card">
                 <div class="conque-card-1-icon conque-card-icon">
-                    <iconpobeditel  width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+                    <img src="/galochka.svg"/>
                 </div>
                 <div class="conque-card-1-text conque-card-text">
                     <div class="conque-card-1-title conque-card-title">
-                        <h3>Думайте верно и
-правильно</h3>
+                        <h3>Я сумел починить свою жизнь</h3>
                     </div>
                     <div class="conque-card-1-information conque-card-information information">
-                        <p>Это инструмент для концентраций подсознания, с которой можно изменить свои убеждения в лучшую сторону.</p>
+                        <p>Не каждый становится специалистом — только тот, кто не остановился на долгих разговорах с психологоми и дальше искал решения проблем.</p>
                     </div>
                 </div>
             </div>
             <div class="conque-card-1 conque-card">
                 <div class="conque-card-1-icon conque-card-icon">
-                    <iconpobeditel  width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+                    <img src="/galochka.svg"/>
                 </div>
                 <div class="conque-card-1-text conque-card-text">
                     <div class="conque-card-1-title conque-card-title">
@@ -145,7 +147,7 @@ export default {
         justify-content: center;
         margin-bottom: 25px;
     }
-    .conque-card-icon svg{
+    .conque-card-icon img{
         width: 50px;
     }
     .conque-card-icon svg path{
@@ -156,7 +158,6 @@ export default {
         margin: 0 0 15px 0;
         font-size: 20px;
         color: #232323;
-        text-transform: uppercase;
     }
     .conque-card-information{
         margin-bottom: 1rem;

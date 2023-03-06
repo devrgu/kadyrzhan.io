@@ -18,27 +18,20 @@
 <span>Обращайтесь ко мне, я знаю всю вашу боль. Я знаю, как пройти через это. Вам в подсознание нужен образ мира, которого вы не замечаете. Это ваше притяжение! Я приведу вас в ресурсное состояние покоя. Только при этом раскладе у вас откроется притяжение богатства и денег.</span>
 <span>Я не очередной семейный психолог, к которому нужно ходить как на работу. Вам не понадобится много сеансов, ведь я не просто выслушиваю своих пациентов, а помогаю устранить первопричину проблем в бизнесе и даю четкие инструкции, как снова привести бизнес в порядок и забыть проблемы которые когда-то не оставляли вас в покое.</span></p>
                 </div>
-                <div class="avtor">
-                       <div class="avtor-img"></div>
-                       <div class="avtor-text">
-                           <h3>Lorem ipsum dolor sit</h3>
-                           <p>Sit amet, onsectetur adipiscing elit</p>
-                       </div>
-                   </div>
             </div>
         </div>
     </div>
 </template>
 <style>
     .whatdoing{
-        padding: 10px 0 140px 0    
+        padding: 60px 0 10px 0    
     }
     .whatdoing-content{
         display: flex;
     }
     .title p{
         font-size: 18px;
-        color: #A7A7A7
+        color: #666
     }
     .title h2{
         color: #232323;
@@ -52,7 +45,6 @@
     .whatdoing-img{
         width: 100%;
         overflow: hidden;
-        padding: 0 0 58% 0;
         position: relative;
     }
     .whatdoing-img img{
@@ -75,7 +67,6 @@
     .information{
         color: #343a40;
         font-size: 18px;
-        margin: 
     }
     .information p span{
         margin: 6px 0;
@@ -86,51 +77,33 @@
         display: flex;
         margin: 32px 0 0 24px;
     }
-    .avtor-img{
-        width: 90px;
-        height: 90px;
-        background-color: #A7A7A7;
-        background-size: cover;
-        border-radius: 100px;
-    }
-    .avtor-text{
-        margin-left: 16px;
-        margin-top: 16px;
-    }
-    .avtor-text h3{
-        font-size: 18px;
-        color: #232323;
-        font-weight: 700;
-    }
-    .avtor-text p{
-        font-size: 16px;
-        color: #A7A7A7;
-        font-weight: 400;
-    }
     @media (max-width: 991px){
         .whatdoing-content{
-        flex-wrap: wrap
+            flex-wrap: wrap
+        }
+        .whatdoing-img{
+            padding: 0 0 58% 0;
         }
         .whatdoing-text{
             margin-top: 48px;
             min-width: 0;
         }
     }
-    @media (max-width: 656px){
+    @media (max-width: 767px){
         .title h2{
-            font-size: 30px !important;
+            font-size: calc(28px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
         }
     }
     @media (max-width: 465px){
-        .title h2{
-            font-size: 24px !important;
-        }
         .whatdoing-text{
             margin-left: 16px;
             margin-right: 16px
         }
-        .avtor-img{
-            width: 10vw;
+        .whatdoing-img{
+            padding: 0 0 270px 0;
+        }
+        .whatdoing-img img{
+            top: -70px;
         }
     }
 </style>

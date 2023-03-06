@@ -5,85 +5,58 @@
        <div class="hr-center">
            <hr>
        </div>
-       <p>
-В программе лечения вы:</p>
+       <p>В программе лечения вы:</p>
    </div>
     <div class="whyme-content content">
         <div class="reason-1 reason">
             <div class="reason-1-icon reason-icon">
-                <iconpobeditel loading="lazy" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+                <img src="/like.svg">
             </div>
             <div class="reason-1-text reason-text">
                 <div class="reason-1-title reason-title">
-                    <h3>Будете здоровы и любимы</h3>
+                    <h3>Будете любимыми и любить</h3>
                 </div>
                 <div class="reason-1-information reason-information information">
-                    <p>Вы будете здоровы и с благодарностью принимать любовь близкого человека.</p>
+                    <p>Вы снова научитесь любить и с благодарностью принимать любовь близкого человека</p>
                 </div>
             </div>
         </div>
         <div class="reason-1 reason">
             <div class="reason-1-icon reason-icon">
-            <iconpobeditel loading="lazy" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+            <img src="/new-life.svg">
             </div>
             <div class="reason-1-text reason-text">
                 <div class="reason-1-title reason-title">
-                    <h3>Возврат обретения новой жизни</h3>
+                    <h3>Вернете свое здоровье</h3>
                 </div>
                 <div class="reason-1-information reason-information information">
-                    <p>У вас снова загорится желание жить, вы будете полны амбиций.</p>
+                    <p>Вы вспомните, как прекрасно ощущать жизнь в здоровом теле.</p>
                 </div>
             </div>
         </div>
         <div class="reason-1 reason">
             <div class="reason-1-icon reason-icon">
-        <iconpobeditel loading="lazy" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+        <img src="/lotos.svg">
             </div>
             <div class="reason-1-text reason-text">
                 <div class="reason-1-title reason-title">
                     <h3>Обретете покой души</h3>
                 </div>
                 <div class="reason-1-information reason-information information">
-                    <p>Вы забудете о конфликтах, язвительных замечаниях и взаимной раздраженности.</p>
+                    <p>Вы забудете о конфликтах, агрессии, язвительных замечаниях и взаимной раздраженности.</p>
                 </div>
             </div>
         </div>
         <div class="reason-1 reason">
-            <div class="reason-1-icon reason-icon">
-                 <iconpobeditel loading="lazy" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+            <div class="reason-4-icon reason-icon">
+                 <img src="/money.svg">
             </div>
             <div class="reason-1-text reason-text">
                 <div class="reason-1-title reason-title">
-                    <h3>Все пойдет по плану процветания</h3>
+                    <h3>Будете ни в чем не нуждаться</h3>
                 </div>
                 <div class="reason-1-information reason-information information">
-                    <p>Вы почувствуете, что все в жизни складывается именно так, как вы всегда мечтали.</p>
-                </div>
-            </div>
-        </div>
-        <div class="reason-1 reason">
-            <div class="reason-1-icon reason-icon">
-        <iconpobeditel loading="lazy" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
-            </div>
-            <div class="reason-1-text reason-text">
-                <div class="reason-1-title reason-title">
-                    <h3>Думайте верно и правильно</h3>
-                </div>
-                <div class="reason-1-information reason-information information">
-                    <p>Это инструмент для концентраций подсознания, с которой можно изменить свои убеждения в лучшую сторону.</p>
-                </div>
-            </div>
-        </div>
-        <div class="reason-1 reason">
-            <div class="reason-1-icon reason-icon">
-                 <iconpobeditel loading="lazy" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"/>
-            </div>
-            <div class="reason-1-text reason-text">
-                <div class="reason-1-title reason-title">
-                    <h3>Будете тем кем вы хотели быть</h3>
-                </div>
-                <div class="reason-1-information reason-information information">
-                    <p>Для нас это обычное дело, но люди называют это чудом.</p>
+                    <p>Вы увидите, как к Вам начинают приходить финансы, которых Вам так не хватало.</p>
                 </div>
             </div>
         </div>
@@ -112,9 +85,6 @@ export default {
         text-align: center;
         margin: 0 auto 75px;
     }
-    .whyme-title h2{
-        font-size: 45px;
-    }
     .hr-center hr{
         width: 100px;
         height: 4px;
@@ -140,12 +110,13 @@ export default {
     }
     .reason-icon{
         flex-shrink: 0;
+        width: 80px;
+        height: 64px;
         padding-right: 25px;
+        display: inline-block;
     }
-    .reason-icon svg{
-        width: 56px;
-        margin-top: 8px;
-        float: left
+    .reason-4-icon{
+        width: 90px;
     }
     .reason-icon svg path{
         fill:#41cb52;

@@ -3,10 +3,9 @@
  <div class="main-content content">
    <div class="main-text-content">
      <div class="main-text-wrapper">
-       <h1><span>Гипнотерапия и Целительство
-</span><br> На Проффесиональном
-Уровне</h1>
-         <p>Вы многие годы не понимая ситуацию безуспешно пытаетесь сохранить или создать семью, прилично зарабатывать и быть здоровым(ой). Но это не дало вам ничего кроме разочарования?<span> На БЕСПЛАТНОЙ консультации Я Вам раскрою настоящую причину, которая забрала у вас годы радости и наслаждений.</span><br>
+       <h1>
+Вы многие годы безуспешно пытаетесь сохранить или создать семью, прилично зарабатывать и быть здоровой, но это не дало вам ничего кроме разочарования?</h1>
+         <p>Через Ваше подсознание я Вас выведу из этого состояния в физическое пространство где вы наслаждаетесь своими мечтами...<br>
 </p>
        <div class="buttons">
          <div class="main-button-zapis main-button">
@@ -84,7 +83,8 @@
       
     }
     .main-text-wrapper h1{
-        font-size: 55px;
+        width: 80%;
+        font-size: 35px;
         font-weight: 800;
         color: #FFFFFF;
         line-height: 1.2;
@@ -127,12 +127,16 @@
     }
     @media (max-width: 991px){
         .main-text-wrapper h1{
-            font-size: 40px;
+            font-size: 30px;
         }
     }
-    @media (max-width: 686px){
+    @media (max-width: 768px){
+        .main-text-wrapper{
+          text-align: center;
+        }
         .main-text-wrapper h1{
-            font-size: 30px;
+          font-size: calc(22px + (8 + 8 * 0.7) * ((100vw - 320px) / 1280));
+            display: inline-block;
         }
         .main-text-wrapper p{
              width: auto;
@@ -143,7 +147,10 @@
     }
     @media (max-width: 565px){
         .main-text-wrapper h1{
-            font-size: 7vw;
+            width: auto;
+        }
+        .main-text-wrapper{
+          text-align: unset
         }
         .main-text-wrapper p{
              font-size: 17px;

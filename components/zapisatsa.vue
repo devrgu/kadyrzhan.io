@@ -16,12 +16,12 @@
     </div>
     </div>
     </div>
-    <div class="description">
-                    <p>Нажимая на кнопку "Отправить заявку" Вы соглашаетесь с политикой конфиденциальности <nuxt-link to="/plans">Серика Аубакирова.</nuxt-link></p>
+    <div class="description-model">
+                    <p>Нажимая на кнопку "Отправить заявку" Вы соглашаетесь с политикой конфиденциальности <nuxt-link to="/rights">Серика Аубакирова.</nuxt-link></p>
                 </div>
                        <div class="main-buttons">
-                <div class="zapisatsa" @click.prevent="send"  @click="$emit('someEvent')">
-                <p>ОТПРАВИТЬ</p>
+                <div class="zapisatsa-button" @click.prevent="send"  @click="$emit('someEvent', child)">
+                <nuxt-link to="#">ОТПРАВИТЬ</nuxt-link>
                 </div>
                 </div>
 </div>
@@ -34,16 +34,15 @@
         surname: '',
         email: '',
         message: '',
+        child: true
     }
   },
         methods: {
     send() {
       this.$axios.$post('/mail/send',{
-        from: '"The Idea project" <saubakirov36@mail.ru>',
+        from: 'ededededdd',
         subject: 'Contact form message',
-        html: `Имя:${this.$refs.name.value},<br>Фамилия:${this.$refs.surname.value}<br>Почта:${this.$refs.email.value}<br>Проблема: ${this.$refs.message.value}`,
-        to: this.email,
-        replyTo: this.email,
+        html: `Имя:${this.$refs.name.value},<br>Фамилия:${this.$refs.surname.value}<br>Почта:${this.$refs.email.value}<br>Проблема: ${this.$refs.message.value}`
       })
   },
             
@@ -54,6 +53,14 @@
 <style scoped>
     .dd{
         margin-bottom: 56px;
+        display: flex;
+        justify-content: center;
+    }
+    .zapis-content{
+        overflow: hidden;
+        padding: 0 24px;
+    }
+    .block{
         display: flex;
         justify-content: center;
     }
@@ -81,25 +88,57 @@
         border-radius: 4px;
         outline: none;
     }
-    .description{
-        text-align: center;
-        font-size: 14px;
-        margin-bottom: 24px;
-    }
-    .description p a{
-        font-weight: 700;
-        font-size: 15px;
-    }
     .main-buttons{
         justify-content: center;
     }
-     .zapisatsa{
+    @media (max-width: 560px) {
+        .main-buttons{
+            flex-wrap: wrap;
+        }
+        .block{
+            max-width: 300px;
+        }
+    }
+</style>
+<style>
+.main-buttons{
+    display: flex;
+}
+.zapisatsa-button{
         margin: 4px !important;
         align-self: center;
-        cursor: pointer;
+        background-color: #41cb52;;
+        border-radius: 100px;
+        width: 240px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .zapisatsa p{
+    .zapisatsa-button a{
         margin: 0;
-        line-height: normal
+        line-height: normal;
+        text-decoration: none;
+        color: #FFFFFF;
+        text-align: -webkit-center;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .description-model{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 24px;
+        padding: 0 24px;
+        color: #666 !important;
+        background: none;
+    }
+    .description-model p a{
+        font-weight: 700;
+        font-size: 15px;
+        color: #41cb52;
     }
 </style>
